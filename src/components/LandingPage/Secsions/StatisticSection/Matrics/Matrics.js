@@ -1,22 +1,17 @@
+import styled from 'styled-components'
+
 function Matrics() {
   return (
-    <>
-    </>
+    <Fadein>
+      <p>350만 명의 사용자</p>
+      <p>21만 개의 리뷰</p>
+      <p>650만 개의 저장</p>
+    </Fadein>
   )
-
 }
 
-const Frames = keyframes`
-0%{
-  transform: translateY(10px);
-  opacity: 0;
-}
-100%{
-  transform: translateY(0);
-  opacity: 1;
-}
-`
-const TripleIndicators = styled.div`
+const Fadein = styled.div`
+  margin: 100px 0 0 600px;
   animation: 700ms ease-in-out forwards;
   animation-delay: 100ms;
 `
