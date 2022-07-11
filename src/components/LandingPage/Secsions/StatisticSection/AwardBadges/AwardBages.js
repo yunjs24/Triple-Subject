@@ -1,9 +1,63 @@
+import styled from 'styled-components'
+
+import { fadeinAnimation } from '../../../../../utils/fadein'
+import googleAward from '../images/play-store2x.png'
+import appleAward from '../images/badge-apple4x.png'
+
+const AwardsInfo = [
+  {
+    store: '2018 구글 플레이스토어',
+    award: '올해의 앱 최우수상 수상',
+    badge: `${googleAward}`,
+  },
+  {
+    store: '2018 애플 앱스토어',
+    award: '오늘의 여행앱 선정',
+    badge: `${appleAward}`,
+  },
+]
 function AwardBadges() {
   return (
-    <div>
-      <p>dsadsa</p>
+    <BadgesWrapper>
+      <ContentWrapper>
+        {AwardsInfo.map((data, idx) => (
+          <AwardContent key={idx} {...data} />
+        ))}
+      </ContentWrapper>
+    </BadgesWrapper>
+  )
+}
+
+function AwardContent({ store, award, badge }) {
+  return (
+    <div style={{ display: 'flex', width: '600px', alignItems: 'center' }}>
+      <img alt="" src={badge} style={{ width: '64px', height: '64px' }} />
+      <div>
+        <p>{store}</p>
+        <p>{award}</p>
+      </div>
     </div>
   )
 }
+
+const BadgesWrapper = styled.div`
+  opacity: 0;
+  ${fadeinAnimation}
+  animation-delay: 200ms;
+`
+
+const ContentWrapper = styled.div`
+  display: block;
+  width: 600px;
+  height: 200px;
+  p {
+    font-size: 10px;
+    color: rgb(58,58,58);
+    margin-top; 10px;
+    margin-left: 10px;
+    font-size: 15px;
+    display: block;
+  }
+`
 
 export default AwardBadges
