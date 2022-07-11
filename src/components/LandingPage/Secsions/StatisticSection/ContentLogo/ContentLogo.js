@@ -5,19 +5,19 @@ import Logo from '../images/triple2x.png'
 
 function ContentLogo() {
   return (
-    <div style={{ width: '400px' }}>
-      <StyledLogo>
-        <p>2021년 12월 기준</p>
-      </StyledLogo>
-    </div>
+    <StyledLogo>
+      <p style={{ position: 'relative', top: '75%' }}>2021년 12월 기준</p>
+    </StyledLogo>
   )
 }
 
 const StyledLogo = styled.article`
+  text-align: center;
   font-size: 15px;
   min-width: 400px;
-  padding-top: 280px;
-
+  min-height: 338px;
+  align-items: center;
+  margin-right: 3%;
   box-sizing: border-box;
   background-image: url(${Logo});
   background-size: 400px 338px;

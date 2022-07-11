@@ -1,20 +1,25 @@
-import ContentLogo from './ContentLogo'
-import Matrics from './Matrics'
-import AwardsBadges from './AwardBadges'
+import styled from 'styled-components'
+
+import ContentLogo from './ContentLogo/ContentLogo'
+import Matrics from './Matrics/Matrics'
+import AwardsBadges from './AwardBadges/AwardBages'
 
 function StatisticSection() {
   return (
     <Wrapper>
       <ContentLogo />
-      <Matrics />
-      <AwardsBadges />
+      <div style={{ marginLeft: '3%' }}>
+        <Matrics />
+        <AwardsBadges />
+      </div>
     </Wrapper>
   )
 }
 
 const Wrapper = styled.div`
-  position: relative;
-  width: 80%;
+  display: flex;
+  justify-content: center;
+
   height: auto;
 `
 export default StatisticSection

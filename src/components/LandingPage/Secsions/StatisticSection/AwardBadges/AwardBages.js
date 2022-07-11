@@ -30,7 +30,7 @@ function AwardBadges() {
 
 function AwardContent({ store, award, badge }) {
   return (
-    <div style={{ display: 'flex', width: '600px', alignItems: 'center' }}>
+    <div style={{ display: 'flex', alignItems: 'center' }}>
       <img alt="" src={badge} style={{ width: '64px', height: '64px' }} />
       <div>
         <p>{store}</p>
@@ -47,8 +47,7 @@ const BadgesWrapper = styled.div`
 `
 
 const ContentWrapper = styled.div`
-  display: block;
-  width: 600px;
+  display: flex;
   height: 200px;
   p {
     font-size: 10px;

@@ -46,7 +46,7 @@ function CountUp(to) {
 
   return count
 }
-const TextWrapper = styled.p`
+const TextWrapper = styled.div`
   font-size: 36px;
   min-width: 400px;
   color: rgb(58, 58, 58);
