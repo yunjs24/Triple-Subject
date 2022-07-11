@@ -17,9 +17,10 @@ function StatisticSection() {
 }
 
 const Wrapper = styled.div`
+  font-family: sans-serif;
   display: flex;
   justify-content: center;
-
+  padding-top: 160px;
   height: auto;
 `
 export default StatisticSection
