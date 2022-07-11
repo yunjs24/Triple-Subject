@@ -17,10 +17,10 @@ curl localhost:3000
 
 ## Styled Component
 ---
-컴포넌트 UI를 개발하듯 일관된 패턴으로 Style Sheet 파일이 아니라
-컴포넌트 단위로 관리하기가 좋습니다.
+Style Sheet 파일이 아니라 컴포넌트 단위로 관리하기에
+컴포넌트 UI를 개발하는 것처럼 일관된 패턴으로 개발할 수 있습니다.
 
-Javascript 소스 내에서 CSS를 스타일링 하기에 JS 환경을 활용하기 좋았습니다.
+Javascript 소스 내에서 CSS를 스타일링 하기에 JS 환경을 활용하기 좋습니다.
 ContentLogo 컴포넌트에 로고를 Background로 집어넣을때 직관적이었고 편리했습니다.
 ```js
 import Logo from '../images/triple2x.png'

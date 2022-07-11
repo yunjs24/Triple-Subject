@@ -54,10 +54,9 @@ const ContentWrapper = styled.div`
     font-size: 14px;
     font-weight: bold;
     color: rgb(58, 58, 58, 0.8);
-    display: block;
+    line-height: 0.5;
+    margin-left: 5px;
   }
-  line-height: 22px;
-  // margin-right: 39px;
 `
 
 export default AwardBadges
