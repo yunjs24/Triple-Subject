@@ -1,4 +1,6 @@
-import { StatisticSection } from './Secsions/StatisticSection'
+import styled from 'styled-components'
+
+import StatisticSection from './Secsions/StatisticSection/StatisticSection'
 
 function LandingPage() {
   return (
@@ -10,7 +12,6 @@ function LandingPage() {
 
 const SectionContainer = styled.section`
   min-width: 1200px;
-  overflow: hideen;
 `
 
 export default LandingPage

@@ -8,7 +8,7 @@ function StatisticSection() {
   return (
     <Wrapper>
       <ContentLogo />
-      <div style={{ marginLeft: '3%' }}>
+      <div>
         <Matrics />
         <AwardsBadges />
       </div>

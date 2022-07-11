@@ -9,13 +9,13 @@ function Matrics() {
   return (
     <TextWrapper>
       <div>
-        <strong>{CountUp(numbers[0])}만 </strong>명개의 사용자
+        <strong>{CountUp(numbers[0])}만 명</strong>의 사용자
       </div>
       <div>
-        <strong>{CountUp(numbers[1])}만 </strong>개의 리뷰
+        <strong>{CountUp(numbers[1])}만 개</strong>의 리뷰
       </div>
       <div>
-        <strong>{CountUp(numbers[2])}만 </strong>개의 저장
+        <strong>{CountUp(numbers[2])}만 개</strong>의 저장
       </div>
     </TextWrapper>
   )

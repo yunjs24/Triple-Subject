@@ -16,6 +16,7 @@ const AwardsInfo = [
     badge: `${appleAward}`,
   },
 ]
+
 function AwardBadges() {
   return (
     <BadgesWrapper>
@@ -50,13 +51,13 @@ const ContentWrapper = styled.div`
   display: flex;
   height: 200px;
   p {
-    font-size: 10px;
-    color: rgb(58,58,58);
-    margin-top; 10px;
-    margin-left: 10px;
-    font-size: 15px;
+    font-size: 14px;
+    font-weight: bold;
+    color: rgb(58, 58, 58, 0.8);
     display: block;
   }
+  line-height: 22px;
+  // margin-right: 39px;
 `
 
 export default AwardBadges
